@@ -19,6 +19,10 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 0x14f00000
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 0x4adf8000
 BOARD_FLASH_BLOCK_SIZE := 131072
 
+# Kernel/recovery devices
+BOARD_BML_BOOT := "/dev/block/bml8"
+BOARD_BML_RECOVERY := "/dev/block/bml9"
+
 TARGET_PREBUILT_KERNEL := device/samsung/charge/kernel
 
 BOARD_UMS_LUNFILE := "/sys/devices/platform/s3c-usbgadget/gadget/lun0/file"
